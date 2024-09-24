@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2;
+  font-size: 1.2rem;
   background-color: #333;
   color: #fff;
 }
@@ -17,7 +17,7 @@ padding: 10px;
 }
 
 aside {
-padding: 5 px;
+padding: 5px;
 margin-left: 10px;
 font-style: italic;
 font-size: smaller;
@@ -67,6 +67,6 @@ height: auto;
 
 footer {
 background-color: #000;
-paddig: 10px;
+padding: 10px;
 font-size: smaller;
 }
