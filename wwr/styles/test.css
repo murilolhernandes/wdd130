@@ -1,0 +1,49 @@
+:root {
+  --text-align: center;
+  --background-color: #009688;
+  --height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%; /* Full width */
+  height: 400px; /* Set desired height */
+  position: relative; /* Ensure child positioning works */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.hero .background-image {
+  position: absolute; /* Position the image absolutely */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the entire div */
+  z-index: -1; /* Background image behind content */
+}
+
+.hero article {
+  position: absolute; /* Position the article absolutely */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset to truly center */
+  background-color: rgba(0, 150, 136, 0.3); /* Semi-transparent background */
+  padding: 20px; /* Adjust as needed */
+  z-index: 1; /* Ensure it's above the background image */
+}
+
+.hero h1 {
+  position: absolute; /* Position the heading absolutely */
+  top: calc(50% - 100px); /* Adjust based on your needs */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  color: #eee; /* Text color */
+  margin: 0; /* Remove default margin */
+  padding: 20px 0; /* Vertical padding, no horizontal padding */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  text-align: center; /* Center the text */
+  z-index: 2; /* Ensure it's above the background image */
+}
