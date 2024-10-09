@@ -138,3 +138,8 @@ header img {
   width: 100%;
   padding: 0 10px 10px;
 }
+
+.adventure figcaption {
+  text-align: center;
+  color: #ffc107;
+}
