@@ -50,7 +50,7 @@ p {
 }
 
 aside {
-  width: 30rem;
+  width: 18.1rem;
   text-align: var(--text-align);
   position: relative;
   grid-row: 1/2;
@@ -59,7 +59,7 @@ aside {
 aside h2 {
   position: absolute;
   top: 0px;
-  left: 167px;
+  left: 73px;
   color: #000000;
 }
 
