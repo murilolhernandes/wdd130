@@ -22,6 +22,9 @@ h2 {
 nav a {
   text-decoration: none;
   padding: 10px;
+  color: black;
+  font-weight: 500;
+  font-size: larger;
 }
 
 nav a:hover {
@@ -161,4 +164,6 @@ footer p {
 .adventure figcaption {
   text-align: center;
   color: #ffc107;
+  font-weight: 500;
+  font-size: 25px;
 }
