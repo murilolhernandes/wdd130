@@ -54,3 +54,7 @@ h2 {
   font-weight: 400;
   color: #ffc107;
 }
+
+nav a {
+  text-decoration: none;
+}
