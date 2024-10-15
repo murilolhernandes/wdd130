@@ -3,3 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-size: 1.2em;
+  color: #333;
+  background: #fff;
+}
+
+header {
+  margin: 0 auto;
+  width: 500px;
+}
+
+h1 {
+  color: navy;
+  font-family: Helvetica, sans-serif;
+}
+
+form {
+  display: grid;
+  width: 500px;
+  grid-gap: 10px;
+  margin: 0 auto;
+  background-color: #eee;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+button{
+  color: #fff;
+  background: navy;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 0.5em;
+  border: none;
+  height: 2.1rem;;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+input, select {
+  width: 466px;
+  height: 2rem;
+}
