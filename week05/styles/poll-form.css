@@ -1,0 +1,125 @@
+/* heading-font: Bebas Neue
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+
+text-font: Roboto 100 and 400
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-weight: 100; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Bebas Neue", sans-serif;
+  font-size: 1.2em;
+  color: #333;
+  background: #fff;
+}
+
+header {
+  margin: 0 auto;
+  width: 750px;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+  color: rgb(24, 24, 170);
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+  width: 750px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee;
+}
+
+fieldset {
+  display: grid;
+  grid-gap: .5rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+legend {
+  padding: 0.5rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  color: rgba(24, 24, 170, 0.8);
+}
+
+label, input, button, select, textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+  /* width: 7rem;
+  height: 3rem;
+  border-radius: .5rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem; */
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+footer {
+  margin: 1rem auto 0;
+  width: 750px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 1em;
+  color: rgb(128, 128, 128);
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+.column2 {
+  /* grid-template-columns: 1fr 2fr; */
+  vertical-align: center;
+}
