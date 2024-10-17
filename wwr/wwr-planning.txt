@@ -4,9 +4,11 @@ primary-color: #009688
 
 secondary-color: #ffc107
 
-accent1-color: #8c34a
+accent1-color: #8bc34a
 
 accent2-color: #795548
+
+new color: #b4654a
 
 heading-font: Bebas Neue
 font-family: "Bebas Neue", sans-serif;
