@@ -249,8 +249,10 @@ aside p {
 }
 
 .container textarea {
+  font-family: "Roboto", sans-serif;
   margin: 10px 0;
   width: 100%;
+  padding: 5px;
   margin: 20px 0;
   background: #eee;
   border-radius: .3rem;
@@ -259,9 +261,11 @@ aside p {
 }
 
 input[type="text"] {
+  font-family: "Roboto", sans-serif;
   width: 100%;
   height: 30px;
   margin: 10px 0;
+  padding: 5px;
   background: #eee;
   border-radius: .3rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
