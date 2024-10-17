@@ -38,6 +38,10 @@ nav a:hover {
   font-weight: 600;
 }
 
+footer a:hover {
+  text-decoration: none;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 1.5fr .5fr;

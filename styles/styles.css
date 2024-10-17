@@ -16,7 +16,7 @@ header, .grid, footer {
 }
 
 
-nav a {
+a {
   color: white;
   padding: 20px;
   display: block;
