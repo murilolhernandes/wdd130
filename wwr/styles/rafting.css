@@ -87,6 +87,7 @@ footer {
 footer nav {
   display: flex;
   align-self: center;
+  justify-content: end;
 
 }
 
@@ -169,6 +170,7 @@ footer nav a {
   align-items: center;
   background-color: rgba(48, 54, 47, 0.8);
   margin-bottom: 20px;
+  grid-auto-flow: column;
 }
 
 .adventure h2 {
@@ -208,12 +210,14 @@ footer nav a {
   margin: 10px 0;
 }
 
+
 .form {
   display: flex;
   justify-content: start;
   gap: 15rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 20px 0;
+  flex-wrap: wrap;
  
 }
 
@@ -295,3 +299,44 @@ button:hover {
 iframe {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
+footer {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+
+}
+.copywrite-container{
+ grid-column: 2/3;
+ display: flex;
+ justify-content: center;
+}
+
+@media screen and (max-width: 415px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    nav {
+      flex-wrap: wrap;
+    }
+ 
+  }
+  
+}
+@media (max-width: 768px) {
+  .adventure {
+    display: block;
+  }
+  .adventure h2 {
+    text-align: center;
+  }
+  .form {
+    display:flex;
+    flex-direction: column;
+    aside {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
