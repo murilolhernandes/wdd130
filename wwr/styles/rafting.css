@@ -71,10 +71,8 @@ header img {
 }
 
 footer {
-  display: flex;
-  /* grid-template-columns: 90% 10%; */
-  /* grid-template-columns: repeat(auto-fill, minmax(2.57fr .4fr)); */
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   border: 1px solid black;
   background-color: rgba(52, 89, 149, 0.8);
   align-items: center;
@@ -102,6 +100,7 @@ footer nav a {
   width: 100%;
   display: block;
   height: var(--height);
+  border: 1px solid black;
 }
 
 .hero h1 {
@@ -131,7 +130,8 @@ footer nav a {
 .hero article img {
   float: right;
   width: 200px;
-  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .history {
@@ -155,7 +155,7 @@ footer nav a {
 .history img {
   justify-self: center;
   width: 100%;
-  padding-bottom: 20px;
+  padding: 0 10px 10px 20px;
 }
 
 .history p {
@@ -209,7 +209,6 @@ footer nav a {
 .heading p {
   margin: 10px 0;
 }
-
 
 .form {
   display: flex;
@@ -299,18 +298,14 @@ button:hover {
 iframe {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
-footer {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
 
-}
 .copywrite-container{
  grid-column: 2/3;
  display: flex;
  justify-content: center;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 495px) {
   header {
     display: flex;
     flex-direction: row;
@@ -318,13 +313,13 @@ footer {
   }
   nav {
     flex-wrap: wrap;
-  } 
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 797px) {
   .adventure {
     display: block;
   }
-  .adventure h2 {
+  .adventure h2, .history h2 {
     text-align: center;
   }
   .form {
@@ -336,5 +331,8 @@ footer {
     justify-content: center;
     text-align: center;
   }
-}
+  .history {
+    display: block;
 
+  }
+}
