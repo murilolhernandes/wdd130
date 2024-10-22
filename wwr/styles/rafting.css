@@ -315,12 +315,10 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    nav {
-      flex-wrap: wrap;
-    }
- 
   }
-  
+  nav {
+    flex-wrap: wrap;
+  } 
 }
 @media (max-width: 768px) {
   .adventure {
@@ -330,13 +328,13 @@ footer {
     text-align: center;
   }
   .form {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    aside {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-    }
+  }
+  aside {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }
 
