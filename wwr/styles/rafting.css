@@ -53,7 +53,7 @@ header {
 
 }
 
-.heading h1, .form h2 {
+.heading h1, .form h2, .newsletter-form h2 {
   color: #b4654a;
 }
 
@@ -163,7 +163,7 @@ footer nav a {
   padding: 0 20px;
 }
 
-.adventure, .adventure1 {
+.adventure {
   border: 1px solid black;
   display: grid;
   grid-template: 5rem 1fr / repeat(5, 1fr);
@@ -173,19 +173,19 @@ footer nav a {
   grid-auto-flow: column;
 }
 
-.adventure h2, .adventure1 h2 {
+.adventure h2 {
   grid-column: 1/6;
   justify-self: center;
   font-size: 40px;
   /* padding: 20px 0; */
 }
 
-.adventure img, .adventure1 {
+.adventure img {
   width: 100%;
   padding: 0 10px 10px;
 }
 
-.adventure figcaption, .adventure1 figcaption {
+.adventure figcaption {
   text-align: center;
   color: #ffc107;
   font-weight: 500;
@@ -285,7 +285,7 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+button:hover, .newsletter-form button:hover {
   background: #009688;
 }
 
@@ -305,6 +305,123 @@ iframe {
  justify-content: center;
 }
 
+.adventure1 {
+  border: 1px solid black;
+  display: grid;
+  grid-template: 5rem 1fr 5rem/ repeat(5, 1fr);
+  align-items: center;
+  background-color: rgba(48, 54, 47, 0.8);
+  margin: 20px 0;
+  grid-auto-flow: column;
+}
+
+.adventure1 h2 {
+  grid-column: 1/6;
+  justify-self: center;
+  font-size: 40px;
+}
+
+.first {
+  grid-column: 1/2;
+}
+
+.second {
+  grid-column: 2/3;
+}
+
+.third {
+  grid-column: 3/4;
+}
+
+.fourth {
+  grid-column: 4/5;
+} 
+
+.fifth {
+  grid-column: 5/6;
+}
+
+.sixth {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  color: #ffc107;
+  font-weight: 500;
+}
+
+.seventh {
+  grid-column: 5/6;
+  justify-self: center;
+}
+
+.seventh button {
+  width: 250px;
+  height: 50px;
+}
+
+.adventure1 img {
+  width: 100%;
+  padding: 0 10px 10px;
+  /* display: block; */
+}
+
+.adventure1 figcaption {
+  text-align: center;
+  color: #ffc107;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-form h2 {
+  font-size: 50px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.p1 {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.p2 {
+  font-size: 15px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.newsletter-form label {
+  font-size: 25px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.newsletter-form input {
+  margin: 20px 0;
+}
+
+.newsletter-form button {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  background: navy;
+  border-radius: .5rem;
+  color: white;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 495px) {
   header {
     display: flex;
@@ -314,12 +431,15 @@ iframe {
   nav {
     flex-wrap: wrap;
   }
+  .adventure1 h2 {
+    text-align: center;
+  }
 }
-@media (max-width: 797px) {
-  .adventure {
+@media (max-width: 910px) {
+  .adventure, .adventure1 {
     display: block;
   }
-  .adventure h2, .history h2 {
+  .adventure h2, .history h2, .adventure1 h2 {
     text-align: center;
   }
   .form {
