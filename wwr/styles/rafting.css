@@ -462,9 +462,13 @@ iframe {
   margin: 20px 0;
 }
 
-.intro2 h2, .favorites h2, .all-options h2, .call-to-action h2, .contact-us h2 {
+.intro2 h2, .all-options h2, .favorites h2, .call-to-action h2, .contact-us h2 {
   font-size: 30px;
   margin: 10px 0;
+  text-align: center;
+}
+
+.favorites p {
   text-align: center;
 }
 
@@ -506,20 +510,19 @@ iframe {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 30px;
 }
 
 .advanced h2 {
   color: navy;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 30px;
 }
 
 .intermediate button, .expert button {
   border: 1px solid #eee;
   color: #fff;
   width: 200px;
+  margin: 0 0 10px;
 }
 
 .intermediate button:hover, .expert button:hover {
@@ -532,6 +535,7 @@ iframe {
   color: navy;
   width: 200px;
   background-color: #ffffff;
+  margin: 10px 0 0 0;
 }
 
 .advanced button:hover {
